@@ -11,12 +11,12 @@ Requirements:
 
 Project Installation:
 
-A. Installing all the dependencies required; delete previously compiled java .class and compile, test and packagethe project.
+Installing all the dependencies required; delete previously compiled java .class and compile, test and packagethe project.
 	1. cmd/bash/powershell
 	2. cd FetchWS
 	3. mvnw.cmd clean install or ./mvnw.cmd clean install (Powershell)
 
-B. Run the compiled project
+Run the compiled project
 	1. cmd/bash/powershell
 	2. cd FetchWS
 	3. mvnw spring-boot:run or ./mvnw spring-boot:run (powershell)
