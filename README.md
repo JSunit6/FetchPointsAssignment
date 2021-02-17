@@ -80,7 +80,7 @@ When a transaction is being addeded, it's timestamp will be the current date & t
 	curl -H "Content-Type: application/json" -d "{\"payerName\":\"DANNON\",\"points\":300}" http://localhost:8080/api/v1.0/addpoints/1 (Windows, escape character for key & value of JSON data included)
 
 #### Response: 
-	{"transactionId":1,"payerName":"DANNON","points":300.0,"transactionDate":"2021-02-16T20:06:54.765"}.
+	{"transactionId":1,"payer":"DANNON","points":300.0,"timestamp":"2021-02-16T20:06:54.765"}.
 
 #### Response Status:
 
