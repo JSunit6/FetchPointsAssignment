@@ -52,10 +52,10 @@ When a transaction is being addeded, it's timestamp will be the current date & t
 #### Example:
 
 #### Endpoint: 
-	api/v1.0/addpoints/1 (adding points for user 1)
+	api/v1.0/transactions/1 (User id)
 
 #### Request: 
-	curl http://localhost:8080/api/v1.0/transactions/1 (User id)
+	curl http://localhost:8080/api/v1.0/transactions/1
 
 #### Response: 
 	[{"transactionId":1,"payer":"DANNON","points":100.0,"timestamp":"2021-02-17T11:22:07.786"},{"transactionId":2,"payer":"UNILEVER","points":200.0,"timestamp":"2021-02-17T11:22:17.008"},{"transactionId":4,"payer":"MILLER COORS","points":10000.0,"timestamp":"2021-02-17T11:22:55.473"},{"transactionId":5,"payer":"DANNON","points":1000.0,"timestamp":"2021-02-17T11:23:07.353"}]
@@ -67,7 +67,7 @@ When a transaction is being addeded, it's timestamp will be the current date & t
 	2. User not found in the system:
 		"status": 404,
    		"error": "Not Found",
-    	"message": "User id not present.",
+    	"message": "User id not present."
 
 ### 3. Add transaction/points to user's account.
 
@@ -126,7 +126,7 @@ When a transaction is being addeded, it's timestamp will be the current date & t
 	api/v1.0/show/1 (user id) 
 
 #### Request: 
-	curl http://localhost:8080/api/v1.0/show/1/5000
+	curl http://localhost:8080/api/v1.0/show/1
 
 #### Response:
 	["UNILEVER, 0.0 points","MILLER COORS, 5300.0 points","DANNON, 1000.0 points"]
