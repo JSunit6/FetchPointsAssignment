@@ -47,7 +47,6 @@ When a transaction is being addeded, it's timestamp will be the current date & t
 #### Response Status:
 	1. Successfull request : 200 OK 
 
-
 ### 2. Get transaction by user id:
 
 #### Example:
@@ -65,12 +64,10 @@ When a transaction is being addeded, it's timestamp will be the current date & t
 
 	1. Successfull request: 200 OK
 
-	2. User not found in the system: 	"status": 404,
-   			 "error": "Not Found",
-    			"message": "User id not present.",
-
-
-	3. Add reward points to user's account
+	2. User not found in the system:
+		"status": 404,
+   		"error": "Not Found",
+    		"message": "User id not present.",
 
 ### 3. Add transaction/points to user's account.
 
@@ -89,10 +86,11 @@ When a transaction is being addeded, it's timestamp will be the current date & t
 
 	1. Successfull request: 200 OK
 
-	2. Invalid Transaction: "status": 400,
-		  "error": "Bad Request",
-	    	  "message": "Invalid transaction."	
-
+	2. Invalid Transaction: 
+		"status": 400,
+		"error": "Bad Request",
+	    	"message": "Invalid transaction."	
+		
 ### 4. Deduct points from a user
 
 #### Example:
@@ -110,13 +108,15 @@ When a transaction is being addeded, it's timestamp will be the current date & t
 
 	1. Successfull request: 200 OK
 
-	2. User not present in the system: "status": 404,
-   			  "error": "Not Found",
-    			  "message": "User id not present."
+	2. User not present in the system: 
+		"status": 404,
+   		"error": "Not Found",
+    		"message": "User id not present."
 
-	3. Invalid transaction request: "status": 404,
-   			  		"error": "Not Found",
-    			  		"message": "Invalid transaction."
+	3. Invalid transaction request: 
+		"status": 404,
+   		"error": "Not Found",
+    		"message": "Invalid transaction."
 
 ### 5. Show user's points per payer
 
@@ -135,7 +135,8 @@ When a transaction is being addeded, it's timestamp will be the current date & t
 
 	1. Successfull request: 200 OK
 
-	2. User not present in the system: "status": 404,
-   					  "error": "Not Found",
-    					  "message": "User id not present."
+	2. User not present in the system: 
+		"status": 404,
+   		"error": "Not Found",
+    		"message": "User id not present."
  
