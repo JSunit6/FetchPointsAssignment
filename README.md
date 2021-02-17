@@ -3,8 +3,8 @@ Fetch webservice assignment for user rewards management.
 
 ## Requirements:
 
-1. Java JDK 8
-2. Maven 
+#### 1. Java JDK 8
+#### 2. Maven 
 	Link to download: http://maven.apache.org/download.cgi
 	Install instructions: http://maven.apache.org/install.html
 
