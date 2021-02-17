@@ -67,7 +67,7 @@ When a transaction is being addeded, it's timestamp will be the current date & t
 	2. User not found in the system:
 		"status": 404,
    		"error": "Not Found",
-    		"message": "User id not present.",
+    	"message": "User id not present.",
 
 ### 3. Add transaction/points to user's account.
 
@@ -111,12 +111,12 @@ When a transaction is being addeded, it's timestamp will be the current date & t
 	2. User not present in the system: 
 		"status": 404,
    		"error": "Not Found",
-    		"message": "User id not present."
+    	"message": "User id not present."
 
 	3. Invalid transaction request: 
 		"status": 404,
    		"error": "Not Found",
-    		"message": "Invalid transaction."
+    	"message": "Invalid transaction."
 
 ### 5. Show user's points per payer
 
@@ -138,5 +138,5 @@ When a transaction is being addeded, it's timestamp will be the current date & t
 	2. User not present in the system: 
 		"status": 404,
    		"error": "Not Found",
-    		"message": "User id not present."
+    	"message": "User id not present."
  
