@@ -50,9 +50,11 @@ Response Status:
 
 Example:
 
-Endpoint: api/v1.0/addpoints/1 (adding points for user 1)
+Endpoint: 
+	api/v1.0/addpoints/1 (adding points for user 1)
 
-Request: curl http://localhost:8080/api/v1.0/transactions/1 (User id)
+Request: 
+	curl http://localhost:8080/api/v1.0/transactions/1 (User id)
 
 Response: 
 [{"transactionId":1,"payer":"DANNON","points":100.0,"timestamp":"2021-02-17T11:22:07.786"},{"transactionId":2,"payer":"UNILEVER","points":200.0,"timestamp":"2021-02-17T11:22:17.008"},{"transactionId":4,"payer":"MILLER COORS","points":10000.0,"timestamp":"2021-02-17T11:22:55.473"},{"transactionId":5,"payer":"DANNON","points":1000.0,"timestamp":"2021-02-17T11:23:07.353"}]
@@ -72,11 +74,14 @@ Response Status:
 
 Example:
 
-Endpoint: api/v1.0/addpoints/1 (adding points for user 1)
+Endpoint: 
+	api/v1.0/addpoints/1 (adding points for user 1)
 
-Request: curl -H "Content-Type: application/json" -d "{\"payerName\":\"DANNON\",\"points\":300}" http://localhost:8080/api/v1.0/addpoints/1 (Windows, escape character for key & value of JSON data included)
+Request: 
+	curl -H "Content-Type: application/json" -d "{\"payerName\":\"DANNON\",\"points\":300}" http://localhost:8080/api/v1.0/addpoints/1 (Windows, escape character for key & value of JSON data included)
 
-Response: {"transactionId":1,"payerName":"DANNON","points":300.0,"transactionDate":"2021-02-16T20:06:54.765"}.
+Response: 
+	{"transactionId":1,"payerName":"DANNON","points":300.0,"transactionDate":"2021-02-16T20:06:54.765"}.
 
 Response Status:
 
@@ -90,11 +95,14 @@ Response Status:
 
 Example:
 
-Endpoint: api/v1.0/deduct/1(userid)/5000(points to deduct) 
+Endpoint: 
+	api/v1.0/deduct/1(userid)/5000(points to deduct) 
 
-Request: curl http://localhost:8080/api/v1.0/deduct/1/5000
+Request: 
+	curl http://localhost:8080/api/v1.0/deduct/1/5000
 
-Response: ["DANNON -100.0 Now","UNILEVER -200.0 Now","MILLER COORS -4700.0 Now"]
+Response: 
+	["DANNON -100.0 Now","UNILEVER -200.0 Now","MILLER COORS -4700.0 Now"]
 
 Response Status:
 
@@ -112,11 +120,14 @@ Response Status:
 
 Example:
 
-Endpoint: api/v1.0/show/1 (user id) 
+Endpoint: 
+	api/v1.0/show/1 (user id) 
 
-Request: curl http://localhost:8080/api/v1.0/show/1/5000
+Request: 
+	curl http://localhost:8080/api/v1.0/show/1/5000
 
-Response:["UNILEVER, 0.0 points","MILLER COORS, 5300.0 points","DANNON, 1000.0 points"]
+Response:
+	["UNILEVER, 0.0 points","MILLER COORS, 5300.0 points","DANNON, 1000.0 points"]
 
 Response Status:
 
