@@ -43,8 +43,7 @@ Response:
 {"1":[{"transactionId":1,"payer":"DANNON","points":100.0,"timestamp":"2021-02-17T11:22:07.786"},{"transactionId":2,"payer":"UNILEVER","points":200.0,"timestamp":"2021-02-17T11:22:17.008"},{"transactionId":4,"payer":"MILLER COORS","points":10000.0,"timestamp":"2021-02-17T11:22:55.473"},{"transactionId":5,"payer":"DANNON","points":1000.0,"timestamp":"2021-02-17T11:23:07.353"}]}
 
 Response Status:
-
-1. Successfull request : 200 OK 
+	1. Successfull request : 200 OK 
 
 
 2. Get transaction by user id:
@@ -60,14 +59,16 @@ Response:
 
 Response Status:
 
-1. Successfull request: 200 OK
+	1. Successfull request: 200 OK
 
-2. User not found in the system: 	"status": 404,
+	2. User not found in the system: 	"status": 404,
    			 "error": "Not Found",
     			"message": "User id not present.",
 
 
-3. Add reward points to user's account
+	3. Add reward points to user's account
+
+3. Add transaction/points to user's account.
 
 Example:
 
@@ -79,9 +80,9 @@ Response: {"transactionId":1,"payerName":"DANNON","points":300.0,"transactionDat
 
 Response Status:
 
-1. Successfull request: 200 OK
+	1. Successfull request: 200 OK
 
-2. Invalid Transaction: "status": 400,
+	2. Invalid Transaction: "status": 400,
 		  "error": "Bad Request",
 	    	  "message": "Invalid transaction."	
 
@@ -97,15 +98,15 @@ Response: ["DANNON -100.0 Now","UNILEVER -200.0 Now","MILLER COORS -4700.0 Now"]
 
 Response Status:
 
-1. Successfull request: 200 OK
+	1. Successfull request: 200 OK
 
-2. User not present in the system: "status": 404,
+	2. User not present in the system: "status": 404,
    			  "error": "Not Found",
     			  "message": "User id not present."
 
-3. Invalid transaction request: 	  "status": 404,
-   			  "error": "Not Found",
-    			  "message": "Invalid transaction."
+	3. Invalid transaction request: "status": 404,
+   			  		"error": "Not Found",
+    			  		"message": "Invalid transaction."
 
 5. Show user's points per payer
 
@@ -119,9 +120,9 @@ Response:["UNILEVER, 0.0 points","MILLER COORS, 5300.0 points","DANNON, 1000.0 p
 
 Response Status:
 
-1. Successfull request: 200 OK
+	1. Successfull request: 200 OK
 
-2. User not present in the system: "status": 404,
-   			  "error": "Not Found",
-    			  "message": "User id not present."
+	2. User not present in the system: "status": 404,
+   					  "error": "Not Found",
+    					  "message": "User id not present."
  
